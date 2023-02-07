@@ -32,6 +32,14 @@ for i in contacts_list:
                 i[5] = j[5]
             if i[6] == '':
                 i[6] = j[6]
+
+for i in contacts_list:
+    if len(i) > 7:
+        i.reverse()
+        i.remove('')
+        i.reverse()
+
+for i in contacts_list:
     if i not in new_contacts_list:
         new_contacts_list.append(i)
 
